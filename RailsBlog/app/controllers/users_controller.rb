@@ -2,6 +2,11 @@ class UsersController < ApplicationController
 
     include SessionsHelper
 
+    # def demo
+    #     binding.pry
+    # end
+
+
     # POST /users(.:format)     users#create
     def create
         User.create(user_params)
