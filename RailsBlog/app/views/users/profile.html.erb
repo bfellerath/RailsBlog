@@ -1,12 +1,14 @@
 <input type="hidden" id="api-token" value="<%= @user.token %>">
 
 
-<h3>welcome back <%= @user.username %></h3>
+<h4>welcome back <%= @user.username %></h4>
 
 <%= button_to "Log Out", '/sessions', method: :delete %>
 
 <form class="new-post" action="/api/posts" method="post">
-    <input type="text" name="post[name]" placeholder="...name">
+    <label for="exampleMessage">Message</label>
+ <!-- <textarea class="u-full-width" type="text" name="post[name]" placeholder="...post"></textarea> -->
+    <input class="u-full-width" type="text" name="post[name]" placeholder="...post">
     <input type="submit" name="name" value="new Post!">
 
 </form>
@@ -15,9 +17,9 @@
 
 
 
-<ul class='posts'>
+<div class='posts'>
 
 
-</ul>
+</div>
 
 <%= javascript_include_tag 'users' %>

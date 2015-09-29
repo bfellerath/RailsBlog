@@ -12,7 +12,7 @@ var PostCollection = Backbone.Collection.extend({
 });
 
 var PostView = Backbone.View.extend({
-    tagName: 'li',
+    tagName: 'div',
     className: 'post',
     template: _.template( $('#post-view').html() ),
     render: function(){

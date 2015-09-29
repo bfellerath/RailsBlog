@@ -2,19 +2,54 @@
 <html>
 <head>
   <title>RailsBlog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+  <link rel="stylesheet" href="/css/styles.css" media="screen" title="no title" charset="utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Anonymous+Pro' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
+
   <script id="post-view" type="text/template">
+
+<div class="row">
+
+
       <div class="post">
-      Here's what I think... <%%= name %>
+          <div id="post-div" class="six columns">
+      <%%= name %>
+      </div>
+      <div class="six columns">
       <button type="button" class="remove">remove</button>
+       </div>
+      </div>
+
       </div>
   </script>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
 </head>
 <body>
+
+    <div id="headerdiv" class="container">
+       <CENTER><h1>mountain shows blog</h1><CENTER>
+
+     </div>
+
+
+     <div id="cooldiv" class="container">
+
+         <div id="navbar" class="row">
+
+      <div class="four columns">  <a id="dark-button" class="button" href="/users/new">REGISTER</a></div>
+      <div class="four columns">  <a id="dark-button" class="button" href="/users/log_in">LOGIN</a></div>
+      <div class="four columns">  <a id="dark-button" class="button" href="/users/profile">PROFILE</a></div>
+
+
+    </div>
+
 
 <%= yield %>
 
