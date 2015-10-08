@@ -8,7 +8,7 @@ where they can enter and remove blog posts.
 
 ###Profile Page:
 
-![](/README_images/profile-page.png)
+![](RailsBlog/README_images/profile-page.png)
 
 
 ###User Stories
