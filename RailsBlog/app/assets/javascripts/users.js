@@ -11,6 +11,7 @@ var PostCollection = Backbone.Collection.extend({
     url: '/api/posts'
 });
 
+
 var PostView = Backbone.View.extend({
     tagName: 'div',
     className: 'post',
@@ -56,6 +57,6 @@ allThePosts.fetch();
 
 $('form.new-post').on('submit', function(e){
     e.preventDefault();
-    var newName = $(this).find('input[name="post[name]"]').val();
+    var newName = $(this).find('textarea[name="post[name]"]').val();
     allThePosts.create({name: newName});
 });
