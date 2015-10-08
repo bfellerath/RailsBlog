@@ -37,6 +37,7 @@ var PostListView = Backbone.View.extend({
         this.listenTo(this.collection, 'add', this.render);
     },
     render: function(){
+        // empties the element
         this.$el.empty();
         var posts = this.collection.models;
         var view;

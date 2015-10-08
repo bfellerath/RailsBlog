@@ -3,12 +3,9 @@
 
 <h4>welcome back, <%= @user.username %></h4>
 
-<!-- <%= button_to "Log Out", '/sessions', method: :delete, :id => 'dark-button' %> -->
-
 <form class="new-post" action="/api/posts" method="post">
     <label for="exampleMessage">Message</label>
  <center><textarea class="fieldwidth" type="text" name="post[name]" placeholder="...post"></textarea></center>
-    <!-- <input class="u-full-width" type="text" name="post[name]" placeholder="...post"> -->
     <input id="dark-button" type="submit" name="name" value="new Post!">
 
 </form>
