@@ -1,7 +1,28 @@
 
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= depend_on_asset "DSC01565.jpg"
+ */
+
+
  body {
      background-color: white;
-     background-image: url('images/DSC01565.jpg');
+     /*background-image: url('images/DSC01565.jpg');*/
+     background-image: url(<%= asset_path('DSC01565.jpg') %>);
+
      font-family: 'Anonymous Pro', ;
      font-family: 'Special Elite', cursive;;
  }
@@ -63,7 +84,7 @@
      background: rgba(50, 80, 100, 0.4);
      color: rgba(255, 204, 0, 0.7);
      height: 36px;
-}
+ }
 
  #dark-button3 {
     border: black solid 1px;
