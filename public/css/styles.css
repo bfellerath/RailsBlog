@@ -1,0 +1,107 @@
+
+ body {
+     background-color: white;
+     background-image: url('images/DSC01565.jpg');
+     /*background-image: url('images/small_steps.png');*/
+     font-family: 'Anonymous Pro', ;
+     font-family: 'Special Elite', cursive;;
+
+ }
+
+ .facebooklink {
+     color: green;
+ }
+
+ #post-div{
+     padding-top: 10px;
+     word-wrap: break-word;      /* IE */
+     text-align: left;
+     background-color: rgba(50, 80, 100, 0.8);
+     border-radius: 10px;
+ }
+
+
+ #headerdiv {
+    font-family: 'Special Elite', cursive;;
+    /*background-image: url('http://i.imgur.com/iZ9wG4n.jpg');
+    background-image: url('http://www.mikechurch.com/wp-content/uploads/2012/11/blade-runner-eye.jpg');
+    background-position: center;
+    background-repeat: no-repeat;*/
+    /*color: #B28F00;*/
+    color: black;
+ }
+
+ #navbar {
+    background-color: #FFCC66;
+    background-color: #DAC986;
+    border-bottom: lightgrey solid 2px;
+    padding-top: 5px;
+    border-radius: 7px;
+
+ }
+
+ #list {
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 1.5em;
+    background-color: lightyellow;
+ }
+
+ #cooldiv {
+    /*background-color: lightyellow;*/
+    /*background-image: url("images/ricepaper_v3.png");*/
+    background: rgba(50, 80, 100, 0.4);
+    color: yellow;
+    border-radius: 10px;
+
+
+
+    /*background-position: center;*/
+    align-items: center;
+    text-align: center;
+    border: grey solid 2px;
+    padding: 2px;
+ }
+
+ h3 {
+    font-family: 'Open Sans', sans-serif;
+ }
+ .fieldwidth {
+     width: 80%;
+     display: block;
+ }
+
+
+
+ /*.remove {
+    margin:
+ }*/
+
+ #dark-button {
+    border: black solid 1px;
+    font-family: 'Anonymous Pro', ;
+    font-size: 15px;
+    color: darkred;
+    min-width: 132px;
+    background-color: #DECE92;
+ }
+
+ #dark-button2 {
+     background: rgba(50, 80, 100, 0.4);
+     color: rgba(255, 204, 0, 0.7);
+     /*font-size: 13px;*/
+     height: 36px;
+     /*line-height: 10px;*/
+
+}
+
+ #dark-button3 {
+    border: black solid 1px;
+    font-family: 'Anonymous Pro', ;
+    font-size: 15px;
+    color: darkred;
+    min-width: 132px;
+    background-color: #DECE92;
+    float: left;
+ }
